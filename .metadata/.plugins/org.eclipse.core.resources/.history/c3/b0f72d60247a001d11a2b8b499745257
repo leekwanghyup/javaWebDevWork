@@ -1,0 +1,19 @@
+package spms.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import spms.vo.Member;
+
+public class MemberDao {
+
+	public List<Member> selectList() {
+		List<Member> list = new ArrayList<Member>();
+		list.add(new Member().setNo(1).setName("lee").setPassword("1234"));
+		list.add(new Member().setNo(2).setName("kim").setPassword("1234"));
+		list.add(new Member().setNo(3).setName("park").setPassword("1234"));
+		
+		return null;
+	}
+
+}

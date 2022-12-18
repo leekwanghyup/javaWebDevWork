@@ -1,0 +1,12 @@
+새로운 프로젝트 생성 : web04_2 
+	- web04 소스 코드 복사 
+	
+1. 회원목록화면에 신규회원 링크 추가 
+	- MemberListServlet.java 신규회원 링크 추가 
+	- 회원 정보 입력폼 만들기 
+		- spms.servlets.MemberAddServlet 
+		- HttpServlet 클래스 : GenericServlet 클래스의 하위 클래스 
+		- doGet() 메서드 오버라이딩 
+			- HttpServlet.servlet()메서드 호출 
+			- servlet()은 요청 방식에 따라 doGet, doPost, doPut 등의 메서드 호출
+		

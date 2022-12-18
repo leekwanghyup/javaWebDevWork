@@ -1,0 +1,12 @@
+
+프로젝트 : web03
+패키지 : lesson03.servlets
+클래스 : HelloWorld
+	- Servlet인터페이스 구현 
+	- 서블릿 생명주기 관련 메서드 : init, service, destory
+	- 서블릿 정보 관련 메서드 : getServletConfig, getServletInfo
+	
+서블릿 배치 정보 작성 
+- web.xml에 HelloWorld 배치 정보 작성 
+
+

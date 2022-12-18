@@ -1,0 +1,5 @@
+web04_5 프로젝트
+
+1. 리다이렉트 
+	- MemberAddServlet.doPost()메서드 
+	- sendRedirect()사요 

@@ -1,0 +1,23 @@
+package com.light.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
+
+import com.light.testbean.DemoBean;
+
+@Configuration
+@ImportResource(locations = {
+		"classpath:spring/security-context.xml", 
+		"file:src/main/webapp/WEB-INF/spring/test-context.xml"
+})
+//
+public class RootConfig {
+
+	@Bean
+	public DemoBean demoBean() {
+		DemoBean demoBean = new DemoBean(); 
+		demoBean.setMessage("되나");
+		return demoBean;
+	}
+}

@@ -1,0 +1,13 @@
+package spms.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MemberDao {
+
+	public List<Member> selectList() {
+		List<Member> list = new ArrayList<Member>(); 
+		return null;
+	}
+
+}

@@ -1,0 +1,49 @@
+package lesson03.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class HelloWorld implements Servlet{ // 서블릿 클래스는 Servlet인터페이스를 구현해야함
+	
+	// 서블릿 생명주기 메서드 : init, service, destory
+	
+	ServletConfig config;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// 서블릿 생성 후 초기화 작업을 수행하기 위해 호출 
+		System.out.println("init()호출됨");
+		config = this.config;
+	}
+	
+	@Override
+	public void destroy() {
+		// 서블릿컨테이너가 종료 또는 멈추었을 때, 해당 서블릿을 비활성화 시킬때 호출
+		System.out.println("destroy()호출됨");
+	}
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		// 클라이언트가 요청할 때 마다 호출되는 메서드 
+		// 실제 서비스 작업을 수행하는 메서드이다. 
+		System.out.println("service()호출됨");
+		
+	}
+
+	@Override
+	public ServletConfig getServletConfig() {
+		System.out.println("getServletConfig()호출");
+		return this.config;
+	}
+
+	@Override
+	public String getServletInfo() {
+		System.out.println("getServletInfo()호출됨");
+		return "version=1.0;author=leekwanghyup;copyright=leekwanghyup2018";
+	}
+}

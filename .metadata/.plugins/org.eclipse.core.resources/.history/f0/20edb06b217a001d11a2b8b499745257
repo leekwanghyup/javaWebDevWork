@@ -1,0 +1,10 @@
+package spms.servlet;
+
+import javax.servlet.http.HttpServlet;
+
+@SuppressWarnings("serial")
+public class DispatcherServlet extends HttpServlet{
+	
+	
+
+}

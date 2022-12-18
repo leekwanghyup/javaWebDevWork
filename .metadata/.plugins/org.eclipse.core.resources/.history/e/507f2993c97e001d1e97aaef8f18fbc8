@@ -1,0 +1,20 @@
+package lesson03.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class CalculatorServlet extends GenericServlet{
+	
+	// GenericServlet에서 Servlet인터페이스에서 구현해야할 메서드를 미리 구현했기 때문에 
+	// init,destory등의 메소드가 필요하지 않다면 service메서드만 구현하면된다. 
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		
+	}
+
+}

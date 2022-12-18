@@ -1,0 +1,10 @@
+package spms.dao;
+
+public class MemberDao {
+
+	public List<Member> selectList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,2 @@
+1. doPost() 메서드 오버라이딩 
+	- MemberAddServlet에서 doPost()메서드를 오버라이딩 한다.

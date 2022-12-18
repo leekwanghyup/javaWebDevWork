@@ -1,0 +1,31 @@
+1. GenericServlet이 없던 시절 
+	- Servlet인터페이스는 모든 추상 메서드를 구현해야 한다. 
+	- 그런데 반드시 구현해야 하는 메서드는 service()메서드 단 하나뿐이다.
+	- 이러한 불편함을 해소하기 위해 등장한 것이 GenericServlet이다.
+	
+2. GenericServlet의 용도 
+	- init(), destory(), getServeltConfig(), getServletInfo()를 미리 구현하여 상속한다. 
+	- service()메소드는 각 서블릿에서 구현해야하므로 여기서는 구현하지 않았다.
+	- 따라서 서블릿을 구현할 때 GenericServlet을 상속 받는다면 service()메서드만 구현할 수 있다.
+
+3. 계산기 서블리 작성
+	- 패키지 : lesson03.servlets 
+	- 클래스 명 : CalculatorServlet
+	
+4. ServletRequest
+	- 클라이언트의 요청정보를 가진 객체 
+	- getParameter() : GET 또는 POST 요청으로 들어온 매개변수값을 가져올 때
+	- getRemoteAddr() : 클라이언트의 IP주소 반환
+	- getScheme() : 클라이언트가 요청한 URI 형식 scheme반환
+		- URL에서 ':'문자 전에 오는 값
+		- 자원을 식별하는 최상의 분류 기호 : http, https, ftp, file, news 
+	- getProtocol() : 요청프로토콜의 이름과 버전, HTTP/1.1
+	- getParameterNames() : 요청정보의 매개변수 이름만 추출하여 반환
+	- getParameterValues(String) : 요청정보의 매개변수값만 추출하여 반환
+	- getParameterMap() : 모든 매개변수이름과 값을 Map객체에 담아 반환
+	- setCharacterEncoding(String) : 
+	
+5. SErvletResponse
+	 
+	
+	

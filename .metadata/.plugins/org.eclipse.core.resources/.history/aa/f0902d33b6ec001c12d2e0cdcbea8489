@@ -1,0 +1,15 @@
+package com.light.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.light.testbean.DemoBean;
+
+@Configuration
+public class RootConfig {
+
+	@Bean
+	public DemoBean demoBean() {
+		DemoBean demoBean = new DemoBean(); 
+	}
+}

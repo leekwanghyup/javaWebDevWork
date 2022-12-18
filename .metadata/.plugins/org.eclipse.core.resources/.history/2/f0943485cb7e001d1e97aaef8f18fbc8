@@ -1,0 +1,27 @@
+package lesson03.servlets;
+
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Map;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/servlet/test01")
+public class ServletRequestAndResponse extends GenericServlet{
+
+	@Override
+	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+		System.out.println(request.getRemoteAddr());
+		System.out.println(request.getScheme());
+		System.out.println("getProtocol() :"+request.getProtocol()); // 요청프로토콜의 이름과 버전
+		
+		Enumeration<String> parameterNames = request.getParameterNames();
+		String[] parameterValues = request.getParameterValues("hobby");
+		Map<String,String[]> parameterMap = request.getParameterMap();
+	}
+
+}

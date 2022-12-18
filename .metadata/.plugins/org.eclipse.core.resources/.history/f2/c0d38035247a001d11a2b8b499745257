@@ -1,0 +1,12 @@
+package spms.dao;
+
+import java.util.List;
+
+public class MemberDao {
+
+	public List<Member> selectList() {
+		// 
+		return null;
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.light.testbean;
+
+import org.apache.catalina.core.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.light.config.RootConfig;
+
+public class MainTest {
+	public static void main(String[] args) {
+		org.springframework.context.ApplicationContext context = new AnnotationConfigApplicationContext(RootConfig.class);
+	}
+}

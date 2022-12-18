@@ -1,0 +1,39 @@
+package me.light.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import me.light.mapper.BoardMapper;
+import me.light.model.Board;
+import me.light.model.Criteria;
+import me.light.model.PageMarker;
+
+@Controller
+@RequestMapping("/board/")
+public class BoardController {
+	
+	@Autowired
+	private BoardMapper mapper; 
+	
+	@GetMapping("/list")
+	public String getList(Criteria criteria,Model model) {
+		List<Board> list = mapper.getList(criteria);
+		PageMarker pageMarker = new PageMarker();
+		pageMarker.setCriteria(criteria);
+		pageMarker.setTotalCount(412);
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMarker);
+		return "board/list";
+	}
+	
+	@GetMapping("/read")
+	public String get(Long bno, Model model) {
+		model.addAttribute("board", mapper.get(bno));
+		return "board/get";
+	}
+}
