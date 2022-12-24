@@ -10,10 +10,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="System"/>
+		<item key="selection" value="8080"/>
 		<list key="findhistory">
-			<item value="System"/>
 			<item value="8080"/>
+			<item value="8090"/>
+			<item value="System"/>
 			<item value="@Autowired"/>
 			<item value="&lt;!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core --&gt;"/>
 		</list>

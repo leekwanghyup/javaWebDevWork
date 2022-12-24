@@ -1,0 +1,15 @@
+## step09
+
+1. 필터
+2. 필터 만들기 
+	- spms.filters.CharacterEncodingFilter
+3. 필터의 구동
+4. 필터의 배치 
+	- web.xml - <filter>와 <filter-mapping> 사용
+	- 서블릿의 doPost()에서 setCharactherEncoding() 호출문 제거
+		- MemberAddServlet
+		- MemberUpdateServlet  
+	- 애노테이션을 이용한 필터 배치 
+		- web.xml에서 필터 선언과 매핑 설정 제거 
+		- CharacterEncodingFilter에서 @WebFilter 애노테이션 사용	
+	

@@ -1,3 +1,0 @@
-1. GenericServlet이 없던 시절 
-	-  Servlet인터페이스는 모든 추상 메서드를 구현해야함.
-	- 

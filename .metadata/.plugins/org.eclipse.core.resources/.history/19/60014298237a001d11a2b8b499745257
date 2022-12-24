@@ -1,7 +1,0 @@
-package spms.servlet;
-
-import javax.servlet.http.HttpServlet;
-
-public class MemberListServlet extends HttpServlet{
-
-}

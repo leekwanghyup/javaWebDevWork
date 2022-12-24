@@ -1,0 +1,15 @@
+## step05_1
+
+1. 포워딩과 인클루드 실습 
+
+2. 포워딩
+	- 포워딩을 이용한 예외처리 
+	- WebContent/Error.jsp
+	- MemberListServlet 
+	- catch 구문에서 Error.jsp페이지로 포워딩
+      
+3. 인클루딩
+	- WebContent/Header.jsp
+	- WebContent/Tail.jsp
+	- WebContent/member/MemberList.jsp : Header와 Tail 추가
+	

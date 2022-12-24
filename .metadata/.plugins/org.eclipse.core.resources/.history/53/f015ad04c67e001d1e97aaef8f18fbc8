@@ -1,5 +1,0 @@
-1. Eclipse를 통한 자동 배치 
-	- Servers 뷰의 컨텍스트 메뉴를 통해서 배치 
-	- 톰캣 실행환경 설정창에서 애플리케이션 배치 
-	- 톰캣 실행환경의 임시 배치 폴더 
-		- .metadata/.pluging/org.eclipse.wst.server.core/tmp0/wtpwebapps/web03	

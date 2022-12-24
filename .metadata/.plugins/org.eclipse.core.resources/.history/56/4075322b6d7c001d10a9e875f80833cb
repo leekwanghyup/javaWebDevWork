@@ -1,5 +1,0 @@
-package spms.listener;
-
-public class ContextLoaderListener {
-
-}

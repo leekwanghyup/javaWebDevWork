@@ -1,0 +1,13 @@
+1. JSP를 사용하는 이유 
+2. JSP 구동원리
+ 
+3. JSP 구동과정확인 
+	- WebContent/Hello.jsp
+	- 서블릿 소스를 확인하려면 JSP를 실행해야 함 
+
+	- JSP파일로부터 자동 생성된 자바소스 파일 확인
+		- 배치폴더 :  ~\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps 
+		- JSP로만든 자바클래스 폴더:  ~.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\web05\org\apache\jsp
+		
+4. HttpJspPage
+		

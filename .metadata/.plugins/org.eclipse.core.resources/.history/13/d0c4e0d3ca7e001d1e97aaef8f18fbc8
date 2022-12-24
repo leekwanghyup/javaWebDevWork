@@ -1,7 +1,0 @@
-package lesson03.servlets;
-
-import javax.servlet.GenericServlet;
-
-public class ServletRequestAndResponse extends GenericServlet{
-
-}

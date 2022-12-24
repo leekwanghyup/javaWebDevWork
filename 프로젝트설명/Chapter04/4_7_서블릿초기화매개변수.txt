@@ -1,0 +1,31 @@
+## web04_6 프로젝트 (step07_1)
+
+- 서블릿 초기화 변수 : 서블릿을 생성하고 초기화할 때 서블릿 컨테이너가 전달하는 데이터 
+- 데이터베이스 연결정보와 같은 정적데이터에 주로 사용 
+- DD파일 또는 애노테이션을 통해 설정할 수 있음 
+
+1. 회원정보 조회와 변경 
+
+2. 회원 목록 페이지에 상세 정보 링크 추가 
+	- MemberServletList : 회원 이름 앞뒤로 a태그 추가
+
+3. DD파일에 서블릿 초기화 매개변수 설정
+	- web.xml : MemberUpdateServlet 서블릿 배치정보 작성 
+	- MemberUpdateServlet에 초기화 파라미터 전달 
+	
+ 4. 회원 상세 정보를 출력하는 서블릿 작성 
+ 	- MemberUpdateSrrvlet doGet()메서드 작성 
+ 	
+ 5. 회원 정보 변경하기 
+ 	- MemberUpdateSrrvlet doPost()메서드 작성
+ 	- 회원 상세페이지에서 이름과 이메일을 변경하는 테스트 수행
+ 	
+ ## step07_2
+ 6. 애노테이션으로 서블릿 초기화 매개변수 설정  
+ 	- @WebServlet으로 MemberUpdateServlet클래스 배치정보 설정
+ 	- 기존에 작성한 MemberUpdateServlet 선언 및 초기화파라미터 삭제
+ 	- 회원 상세페이지에서 이름과 이메일을 변경하는 테스트 수행
+ 	
+ 	
+ 
+ 

@@ -1,0 +1,16 @@
+## step08_1
+
+1. 컨텍스트 초기화 매개변수의 선언 
+	- web.xml에 컨텍스트 매개변수 선언 
+	- MemberUpdateServlet.doGet() 컨텍스트 초기화 매개변수 사용 
+		- 기존의 초기화 파라미터 설정 삭제, 매핑 정보만 남겨둔다.
+	- MemberUpdateServlet.doPost() 컨텍스트 초기화 매개변수 사용
+	- 회원정보 수정 테스트 수행 
+
+2. 회원정보를 삭제하는 서블릿 생성 
+	- MemberDeleteServlet
+	- 삭제 요청 URL : /member/delete?no=삭제할 회원번호
+	
+3. MemberServlet과 MemberListServlet도 컨텍스트 초기화 매개변수 사용하는 것으로 변경 
+
+4. MemberUpdateServlet에 삭제 버튼 추가 

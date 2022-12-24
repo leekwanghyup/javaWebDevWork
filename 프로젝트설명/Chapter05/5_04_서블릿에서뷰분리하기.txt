@@ -1,0 +1,16 @@
+## setp04_1
+
+1.  
+
+2. 뷰 분리 실습
+
+3. 값 객체 생성	
+	- spms.vo.Member : 세터메서드체이닝 가능
+
+4. 서블릿에서 뷰 관련 코드 제거 
+	- MemberListServlet 
+
+5. 뷰 컴포넌트 만들기 
+	- MemberList.jsp
+	
+6. 회원 목록 테스트  
