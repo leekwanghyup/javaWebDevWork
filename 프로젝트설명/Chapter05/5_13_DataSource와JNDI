@@ -1,0 +1,25 @@
+# DataSource와 JNDI
+	
+## 1. javax.sql.확장패키지 
+
+## 2. DataSource
+	- DataSource의 장점
+		1) 서버에서 관리하므로 데이터베이스나 JDBC드라이버 변경되더라도 교체할 필요가 없다. 
+		2) Connection과 Statement객체 풀링 가능, 분산 트랜잭션을 다룰 수 있다. 
+
+## 3. DataSource의 적용
+	- DBConnectionPool 대신 DataSoruce를 적용해보자.
+	- DataSource 구현체 준비 
+		WebContent/WEB-INF/lib/commons-dbcp-1.4.jar
+	
+	- ContextLoaderListener
+		DBConnectionPool 대신 BasicDataSource 사용
+	- MemberDao
+	 	DBConnectionPool 관련 코드 삭제 
+	 	DataSource객체 선언 및 세터 생성 
+	 	
+## 4. 서버에서 제공하는 DataSource 사용하기 
+	- 톰캣 서버에 DataSource 설정하기 : context.xml 
+	- 웹 애플리케이션에서 톰캣 서버 자원 사용 : web.xml
+	- ContextLoaderListener 클래스 변경 
+

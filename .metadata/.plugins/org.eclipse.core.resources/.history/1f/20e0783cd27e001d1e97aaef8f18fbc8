@@ -1,8 +1,0 @@
-1. 웹프로젝트 생성 
-	- Dynamic Web Project
-	- 프로젝트명 : web03
-	- 톰캣 서버 설정 
-	- 웹애플리케이션 배치정보 설정 
-		- Context root : web03
-		- Content directory : WebContent 
-		- web.xml파일 생성 

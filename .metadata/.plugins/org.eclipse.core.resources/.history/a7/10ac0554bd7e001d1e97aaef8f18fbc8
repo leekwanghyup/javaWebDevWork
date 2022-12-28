@@ -1,7 +1,0 @@
-package lesson03.servlets;
-
-import javax.servlet.Servlet;
-
-public class HelloWorld implements Servlet{
-
-}
